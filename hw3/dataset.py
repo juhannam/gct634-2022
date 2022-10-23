@@ -97,7 +97,7 @@ class MAESTRO_small(Dataset):
         data = dict(path=audio_path, audio=audio_tensor, frame=frame_tensor, onset=onset_tensor)
         return data
     
-    def __getitem__(self, index:int):
+    def __getitem__(self, index:int) -> Dict[str,Tensor]:
         data:Dict[str,Tensor] = self.data[index]
 
         audio:Tensor = data['audio']
