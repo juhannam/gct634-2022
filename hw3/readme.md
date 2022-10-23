@@ -1,4 +1,4 @@
-# HW3 : Automatic Polyphonic Piano Transcription [[Leader Board]](https://docs.google.com/spreadsheets/d/1xlkwRRxS0K7m2AZr5nX1Gfrh8i_Rsiv6wSMp8b8wZgs/edit?usp=sharing)
+# HW3 : Automatic Polyphonic Piano Transcription \\<!--[[Leader Board]](https://docs.google.com/spreadsheets/d/1xlkwRRxS0K7m2AZr5nX1Gfrh8i_Rsiv6wSMp8b8wZgs/edit?usp=sharing)-->
 
 Automatic music transcription (AMT) refers to an automated process that converts musical signals into a piano roll. Polyphonic piano transcription is a specific AMT task for piano music.  
 Because of sequential aspect of piano transcription, recurrent neural network (RNN) module is commonly used for the task.
