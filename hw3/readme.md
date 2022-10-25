@@ -83,24 +83,6 @@ The prediction of the network will be evaluated in two ways.
 
 If you are not familiar with precision / recall / F-score, checkout the [Wikipedia article on F-score](https://en.wikipedia.org/wiki/F-score). But you can focus on F1 score since it's quite a faithful metric.
 
-## Testing models
-Once you finish implementing the following three models, you can run the following testing command:
-```
-$ python model.py
-Loading 1 group(s) of MAESTRO_small at data
-Loading group debug: 100%|█████████████████████| 10/10 [00:07<00:00,  1.42it/s]
-Testing Transcriber_RNN forward...passed!
-Testing Transcriber_RNN backward...passed!
-Testing Transcriber_CRNN forward...passed!
-Testing Transcriber_CRNN backward...passed!
-Testing Transcriber_ONF forward...passed!
-Testing Transcriber_ONF backward...passed!
-All tests passed!
-```
-Note that the test fails if your model's `__init__` function defines its layers in a different order than the order in this repository.
-
-Running and passing the test is totally optional, so don't worry. If the test fails, TAs will manually check your implementation.
-
 ## Question 1: Implement LSTM-based model.
 Go to [`model.py`](model.py) and implement a model that only consists of LSTM layers.
 
