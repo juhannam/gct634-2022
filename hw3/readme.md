@@ -1,4 +1,4 @@
-# HW3 : Automatic Polyphonic Piano Transcription \\<!--[[Leader Board]](https://docs.google.com/spreadsheets/d/1xlkwRRxS0K7m2AZr5nX1Gfrh8i_Rsiv6wSMp8b8wZgs/edit?usp=sharing)-->
+# HW3 : Automatic Polyphonic Piano Transcription [[Leader Board]](https://docs.google.com/spreadsheets/d/1-8WbanbGMuiUzb_rfYAPFHX4JkIjgiaFm_6SA9E9zik/edit?usp=sharing)
 
 Automatic music transcription (AMT) refers to an automated process that converts musical signals into a piano roll. Polyphonic piano transcription is a specific AMT task for piano music.  
 Because of sequential aspect of piano transcription, recurrent neural network (RNN) module is commonly used for the task.
@@ -10,7 +10,7 @@ In this homework, your task is to re-implement two RNN-based transcription model
 * Experiencing the deep learning process with sequential data.
 * Getting familiar with RNN architectures.
 
-\\<!-- Due date: November 21, 11:59 PM (KST) -->
+Due date: November 6, 11:59 PM (KST)
 
 ## Environment
 This homework requires several packages.
