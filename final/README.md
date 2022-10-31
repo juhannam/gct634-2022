@@ -36,7 +36,7 @@ Once you form a team and select a topic, make an appointment with Prof. Juhan Na
 Also, feel free to request a meeting with TAs to get help about your final project.
 
 ### 5. Project Introduction Presentation
-Each team introduces the project topic in the classroom (10 minute long). We expect it to include the task definition, review of previous work, new ideas and any progress.  
+Each team introduces the project topic in the classroom (10 minute long). It is expected to include the task definition, review of previous work, new ideas and any progress.  
 
 ### 6. Final Presentation
 - The length is expected to be about 5 minutes
