@@ -30,7 +30,7 @@ You can also check final projects from the previous years:
 - [2018 Final Projects](https://mac.kaist.ac.kr/~juhan/gct634/2018-Spr/final.html)
 
 ### 3. Meeting With the Professor
-Once you form a team and select a topic, make an appointment with Prof. Juhan Nam. We will have a concentrated meeting week on Nov 22-26 (Meeting time slots will be announced later). If you would like to meet the professor early, however, you can also request a meeting before the week. 
+Once you form a team and select a topic, make an appointment with Prof. Juhan Nam. Meeting time slots are available on Nov 19, 21 and 22. If you would like to meet the professor earlier, you can request me via email. 
 
 ### 4. Ask TAs
 Also, feel free to request a meeting with TAs to get help about your final project.
