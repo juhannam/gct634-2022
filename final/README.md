@@ -2,7 +2,7 @@
 
 
 ### 1. Team Building
-- Find classmates to form a final project team. One team can include up to 2 team members.
+- Find classmates to form a final project team. One team can include up to 3 team members.
 - In case you cannot find teammates, TAs will help the matching
 - Put your names and team project title at [the list of final project teams](https://docs.google.com/spreadsheets/d/18qcDU-sP5my4MKRx2kcyP5_6sVM6c8SaNYcVkNl7hH0/edit?usp=sharing)
 
