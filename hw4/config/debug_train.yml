@@ -1,0 +1,8 @@
+pickle_dir: '/home/hounsu/634-TA/MusicTransformer-pytorch/dataset/midi'
+epochs: 100
+batch_size: 2
+load_path:
+dropout: 0.1
+debug: 'true'
+l_r: 0.001
+label_smooth: 0.1
