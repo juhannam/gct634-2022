@@ -151,5 +151,6 @@ torch.save({'model_state_dict' : single_mt.state_dict(),
             'optimizer_state_dict': opt.state_dict(),
             'loss': loss},
             args.model_dir+'/final.pth'.format(idx))
+
 eval_summary_writer.close()
 train_summary_writer.close()

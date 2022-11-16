@@ -7,4 +7,4 @@ debug: False
 l_r: 0.0001 #0.001?
 label_smooth: 0.1
 pretrain: False
-pretrain_dir: './exp_config/E_require_grad_true'
+pretrain_dir: './exp_config/train_results'
