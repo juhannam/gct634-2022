@@ -1,3 +1,0 @@
-[submodule "midi_neural_processor"]
-	path = ./hw4/midi_neural_processor
-	url = https://github.com/jason9693/midi-neural-processor.git
