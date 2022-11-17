@@ -69,9 +69,9 @@ $ python preprocess.py ./dataset/maestro-v3.0.0 ./dataset/midi
 
 Execute:
 ```bash
-python3 train.py -m ./exp_config/train_results -c ./config/base.yml ./config/train.yml
+python3 train.py -m ./exp_config/your_train_results -c ./config/base.yml ./config/train.yml
 ```
-We make a folder called ./exp_config/train_results, and save the checkpoint .pth files here.
+Folder is made in ./exp_config/train_results, and the checkpoint .pth files are saved here.
 ./config/base.yml and ./config/train.yml are train configurations. Find out how each of the configures effect the model, and try to change them by yourself.
 Note: The train will normally take a long time. Really long. Maybe a couple of days. Try to set the epoch large (maybe 10000) and try generating with intermediate .pth files. (ex) train-1098.pth, train-3000.pth and so on)
 If you want to just generate results with trained model, I provided the pretrained .pth file, so you can use it.
@@ -110,11 +110,16 @@ Connect to https://localhost:6006 , and you should see the logged data!
 
 
 # Generate Music
-
+If you want to use pretrained model, download the [train-900.pth](https://drive.google.com/file/d/11dI7MFwO1RgsmqtXHfiKNmNzfRKgayux/view?usp=sharing) file and place it at ./exp_config/train_results and execute:
 ```bash
 $ python3 generate.py -m ./exp_config/train_results -c ./config/base.yml ./config/generate.yml
 ```
-Reads specific checkpoint .pth (should be specified inside generate.py) from ./exp_config/train_results and generate midi file inside a path specified in the generate.py script.
+If you want to use your own trained model, execute:
+```bash
+$ python3 generate.py -m ./exp_config/your_train_results -c ./config/base.yml ./config/generate.yml
+
+These code will read specific checkpoint .pth (should be specified inside generate.py) from ./exp_config/ and generate midi file inside a path specified in the generate.py script.
+You can specify path of the condition_file at the ./config/generate.yml. The first 500 midi events of this file will be the input to the model.
 
 ## Generated Sample Example (Youtube Link)
 * click the image.
