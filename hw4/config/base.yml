@@ -1,0 +1,7 @@
+experiment: 'embedding256-layer6'
+max_seq: 2048
+num_layers: 6
+event_dim: 388
+embedding_dim: 256
+head_size: 4
+fp16:
