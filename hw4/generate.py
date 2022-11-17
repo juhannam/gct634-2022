@@ -39,7 +39,6 @@ mt = MusicTransformer(
 mt.load_state_dict(torch.load(os.path.join(args.model_dir, config.checkpoint_pth), map_location=config.device))
 mt.test()
 
-# print(config.condition_file)
 if config.condition_file is not None:
     inputs = np.array([encode_midi(config.condition_file)[:500]])
 else:

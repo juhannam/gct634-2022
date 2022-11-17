@@ -15,7 +15,6 @@ The main contribution of this paper is introducing 'Relative Global Attention', 
 
 Overall structure are as follows:
 
-config 
 
 
 # Simple Start ( Repository Setting )
@@ -27,11 +26,14 @@ After you've cloned this repository:
 $ conda create -n 634hw4 python=3.7
 $ conda activate 634hw4
 $ sudo apt-get install gcc libgirepository1.0-dev libcairo2-dev pkg-config python3-dev gir1.2-gtk-3.0 libapt-pkg-dev
-$ cd gct634-2022-hw4
+$ cd gct634-2022
 $ pip install -r requirements.txt # if there's warning, press 'w' and continue
 $ conda config --set ssl_verify no
 $ pip3 --default-timeout=500 install torch torchvision torchaudio
 $ pip install tensorflow tqdm
+$ cd hw4
+$ git clone https://github.com/jason9693/midi-neural-processor.git # clone another submodule inside hw4
+$ mv midi-neural-processor midi_neural_processor
 
 ```
 
@@ -43,6 +45,14 @@ $ pip install tensorflow tqdm
   Download the [maestro-v3.0.0-midi.zip](https://storage.googleapis.com/magentadata/datasets/maestro/v3.0.0/maestro-v3.0.0-midi.zip) (81MB uncompressed)
 
 * Make a directory named 'dataset' and unzip the zip file inside the directory.
+
+```bash
+$ sudo apt-get wget unzip
+$ mkdir dataset # inside hw4 directory
+$ cd dataset
+$ wget https://storage.googleapis.com/magentadata/datasets/maestro/v3.0.0/maestro-v3.0.0-midi.zip
+$ unzip maestro-v3.0.0-midi.zip
+```
 
 * We brought the preprocess implementation repository from [here](https://github.com/jason9693/midi-neural-processor).
   As we've learned from lectures, the MIDI file is represented as event numbers from 0 ~ 387.
@@ -59,9 +69,9 @@ $ python preprocess.py ./dataset/maestro-v3.0.0 ./dataset/midi
 
 Execute:
 ```bash
-python3 train.py -m ./exp_config/train_results -c ./config/base.yml ./config/train.yml
+python3 train.py -m ./exp_config/your_train_results -c ./config/base.yml ./config/train.yml
 ```
-We make a folder called ./exp_config/train_results, and save the checkpoint .pth files here.
+Folder is made in ./exp_config/train_results, and the checkpoint .pth files are saved here.
 ./config/base.yml and ./config/train.yml are train configurations. Find out how each of the configures effect the model, and try to change them by yourself.
 Note: The train will normally take a long time. Really long. Maybe a couple of days. Try to set the epoch large (maybe 10000) and try generating with intermediate .pth files. (ex) train-1098.pth, train-3000.pth and so on)
 If you want to just generate results with trained model, I provided the pretrained .pth file, so you can use it.
@@ -100,11 +110,16 @@ Connect to https://localhost:6006 , and you should see the logged data!
 
 
 # Generate Music
-
+If you want to use pretrained model, download the [train-900.pth](https://drive.google.com/file/d/11dI7MFwO1RgsmqtXHfiKNmNzfRKgayux/view?usp=sharing) file and place it at ./exp_config/train_results and execute:
 ```bash
 $ python3 generate.py -m ./exp_config/train_results -c ./config/base.yml ./config/generate.yml
 ```
-Reads specific checkpoint .pth (should be specified inside generate.py) from ./exp_config/train_results and generate midi file inside a path specified in the generate.py script.
+If you want to use your own trained model, execute:
+```bash
+$ python3 generate.py -m ./exp_config/your_train_results -c ./config/base.yml ./config/generate.yml
+
+These code will read specific checkpoint .pth (should be specified inside generate.py) from ./exp_config/ and generate midi file inside a path specified in the generate.py script.
+You can specify path of the condition_file at the ./config/generate.yml. The first 500 midi events of this file will be the input to the model.
 
 ## Generated Sample Example (Youtube Link)
 * click the image.
