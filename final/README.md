@@ -52,5 +52,5 @@ Each team introduces the project topic in the classroom (10 minute long). It is 
 - Nov 19 (Fri) - 22 (Tue): Meeting with Prof. Nam
 - Nov 28 (Mon) / Nov 30 (Wed): Project introduction (Classroom)
 - Dec 14 (Wed): Final presentation
-- Dec 16 (Fri): Final report due
+- Dec 18 (Sun): Final report + video due
 
